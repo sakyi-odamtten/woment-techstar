@@ -1,0 +1,196 @@
+
+
+/*header, main {
+    
+}*/
+
+/*header {
+    padding: 10px; 
+}*/
+body{
+    align-items: center;
+    padding: 70px;
+    background-clip: content-box;
+    box-shadow: inset 0 0 0 80px rgb(221, 218, 218);
+    border-radius: 20px;
+}
+.pading{
+    padding: 20px;
+    border-radius: 20px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    font-family: poppins; 
+}
+nav img {
+    width: 50px;
+}
+nav h4 {
+    margin-right: auto; 
+}
+
+nav a {
+    color: black;
+    text-decoration: none; 
+    margin-right: 15px;
+}
+nav a img {
+    width: 15px;
+}
+
+nav button {
+    background-color: black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: auto; 
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: poppins;
+    column-gap: 30px;
+     
+}
+section img {
+    width: 55px;
+}
+.font1{
+    font-size: 40px;
+}
+.down {
+    align-self: center;
+}
+.down.border {
+    border-right: 1px solid rgb(211, 202, 202);
+}
+
+article {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+    font-family: poppins;
+}
+.image {
+    width: 200px;
+    height: 40px;
+    align-items: baseline;
+}
+.image2 {
+    width: 50px;
+}
+
+article > div.spread:first-child {
+    background: black;
+    color: #ebe8e8; 
+    border-radius: 10px; 
+    padding: 30px;
+}
+article > div.shit:nth-child(2) {
+    background: rgb(211, 202, 202);
+    /* color: #867676; */ 
+    border-radius: 10px; 
+    padding: 30px;
+}
+article >div.shit:nth-child(2) button {
+    background-color: black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    display: inline-block;
+}
+.article-content {
+    background: black;
+    color: white;
+    border-radius: 10px;
+    padding: 30px; 
+}
+article > div.spread:nth-child(3) {
+    background: rgb(223, 114, 75);
+    /* color: #867676; */ 
+    border-radius: 10px;
+    padding: 30px; 
+}
+article > div.item1:nth-child(4) {
+    background: rgb(142, 142, 230);
+    /* color: #867676; */ 
+    border-radius: 10px;
+    padding: 30px;
+}
+
+article > div.shit:nth-child(5) {
+    background: rgb(223, 114, 75);
+    /* color: #867676; */ 
+    border-radius: 10px;
+    padding: 30px; 
+}
+article > div.spread:nth-child(6) {
+    background: rgb(142, 142, 230);
+    /* color: #867676; */ 
+    border-radius: 10px; 
+    padding: 30px;
+}
+
+
+.spread{
+    grid-column: span 2;
+    height: 200px;
+    
+}
+.spread.sub {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.image3{
+    width: 98px;
+    background-color: black;
+    overflow: hidden;
+}
+.item1 {
+    grid-column: 1 / span 1;
+    grid-row: span 2;
+    max-width: 100%
+}
+.shit {
+    grid-row: span 2;
+    max-width: 100%
+}
+@media screen and (max-width: 960px) {
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    nav {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    nav h1 {
+        grid-column: 1/ span 4;
+        grid-row: 1;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    main{
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    nav {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    nav h1 {
+        grid-column: 1/ span 4;
+        grid-row: 1;
+    }
+}
